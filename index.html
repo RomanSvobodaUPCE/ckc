@@ -1,109 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Center for Kinetic Calculations</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            line-height: 1.6;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
             color: #333;
+            background: #ffffff;
         }
 
-        h1 {
-            color: #1f4e79;
-            font-size: 36px;
+        header {
+            background: #1f4e79;
+            color: white;
+            padding: 35px 20px;
+        }
+
+        .header-content {
+            max-width: 1100px;
+            margin: auto;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 34px;
+        }
+
+        header p {
+            margin-top: 8px;
+            font-size: 17px;
+        }
+
+        nav {
+            background: #163a5c;
+        }
+
+        .nav-content {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+
+        nav a:hover {
+            background: #285a86;
+        }
+
+        main {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
         }
 
         h2 {
             color: #1f4e79;
-            margin-top: 40px;
+            font-size: 28px;
         }
 
-        nav {
-            margin: 25px 0;
-            padding: 15px;
-            background: #f2f2f2;
-        }
-
-        nav a {
-            margin-right: 25px;
-            text-decoration: none;
-            color: #1f4e79;
-            font-weight: bold;
-        }
-
-        .welcome {
+        .intro {
             font-size: 19px;
+            line-height: 1.7;
+            max-width: 850px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            margin-top: 35px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            flex: 1;
+            min-width: 250px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 25px;
+            background: #f8f9fa;
+        }
+
+        .card h3 {
+            color: #1f4e79;
+            margin-top: 0;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 18px;
+            background: #1f4e79;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .button:hover {
+            background: #285a86;
+        }
+
+        footer {
+            margin-top: 80px;
+            background: #f2f2f2;
+            padding: 25px 20px;
+            text-align: center;
+            color: #666;
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Center for Kinetic Calculations</h1>
+<header>
+    <div class="header-content">
+        <h1>Center for Kinetic Calculations</h1>
+        <p>Scientific software, kinetic analysis and computational methods</p>
+    </div>
+</header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#software">Software</a>
-        <a href="#articles">Scientific Articles</a>
-        <a href="#about">About</a>
-    </nav>
+<nav>
+    <div class="nav-content">
+        <a href="index.html">Home</a>
+        <a href="software.html">Software</a>
+        <a href="publications.html">Publications</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
 
-    <section id="home">
-        <h2>Welcome</h2>
+<main>
 
-        <p class="welcome">
-            Welcome to the Center for Kinetic Calculations.
-        </p>
+    <h2>Welcome</h2>
 
-        <p>
-            This website provides access to scientific software,
-            calculation tools, and scientific publications related
-            to kinetic calculations and the analysis of experimental data.
-        </p>
-    </section>
+    <p class="intro">
+        Welcome to the Center for Kinetic Calculations.
+    </p>
 
-    <section id="software">
-        <h2>Software</h2>
+    <p class="intro">
+        The Center for Kinetic Calculations provides scientific
+        software and computational tools for kinetic analysis,
+        thermal analysis, and the investigation of relaxation
+        and transformation processes in materials.
+    </p>
 
-        <p>
-            Software developed for scientific calculations will be
-            available here for download.
-        </p>
+    <div class="cards">
 
-        <p>
-            <strong>Coming soon.</strong>
-        </p>
-    </section>
+        <div class="card">
+            <h3>Scientific Software</h3>
 
-    <section id="articles">
-        <h2>Scientific Articles</h2>
+            <p>
+                Software tools for kinetic calculations,
+                experimental data analysis and numerical simulation.
+            </p>
 
-        <p>
-            Scientific publications and related materials will be
-            collected here.
-        </p>
+            <a class="button" href="software.html">
+                Explore software
+            </a>
+        </div>
 
-        <p>
-            <strong>Coming soon.</strong>
-        </p>
-    </section>
+        <div class="card">
+            <h3>Publications</h3>
 
-    <section id="about">
-        <h2>About</h2>
+            <p>
+                Scientific publications related to kinetic
+                calculations and the development of the software.
+            </p>
 
-        <p>
-            The Center for Kinetic Calculations is focused on the
-            development and application of computational methods
-            for kinetic analysis and related scientific calculations.
-        </p>
-    </section>
+            <a class="button" href="publications.html">
+                View publications
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>About CKC</h3>
+
+            <p>
+                Information about the Center for Kinetic Calculations,
+                its activities and scientific objectives.
+            </p>
+
+            <a class="button" href="about.html">
+                About the Center
+            </a>
+        </div>
+
+    </div>
+
+</main>
+
+<footer>
+    © 2026 Center for Kinetic Calculations
+</footer>
 
 </body>
 </html>
